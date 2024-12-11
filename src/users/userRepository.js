@@ -12,4 +12,10 @@ const createUser = async (email, password, nickname) => {
   );
 };
 
-module.exports = { createUser };
+const getUserByEmail = async (email) => {
+  `
+  SELECT id, email, password FROM users WHERE email = ?
+  `[email];
+};
+
+module.exports = { createUser, getUserByEmail };

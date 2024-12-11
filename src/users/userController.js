@@ -25,7 +25,15 @@ const signUp = catchAsync(async (req, res) => {
   await createUser(email, hashedPassword, nickname);
 
   // 응답
-  res.status(201).json({ message: 'User successfully created' });
+  res.status(201).json({ message: '회원가입 성공' });
 });
 
-module.exports = { signUp };
+const signIn = catchAsync(async (req, res) => {
+  const { email, password } = req.body;
+
+  await getUserByEmail(email, password);
+
+  res.status(201).json({ message: '로그인 성공' });
+});
+
+module.exports = { signUp, signIn };
