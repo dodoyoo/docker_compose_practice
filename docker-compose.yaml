@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0.34
+    restart: always
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=ehdrn0822!
+      - MYSQL_DATABASE=docker_compose
+    ports:
+      - '3306:3306'
