@@ -31,4 +31,12 @@
    <div align="center">
      <img width=600 src="https://github.com/user-attachments/assets/0e036e97-445d-4fd5-a91c-517e75a31eb6">
    </div>
- 3. 
+ 3. docker-compose up -d 명령어를 사용하여 도커 컴포즈 프로젝트를 실행할 수 있다.
+    이것은 docker-compose.yml을 읽어 컨테이너가 생성된다.
+    <div align="center">
+    <img width=600 src="https://github.com/user-attachments/assets/0e904551-f4a4-4705-a3a7-e4f5f6798ee2">
+      </div>
+4. 이후 docker ps 와 docker-compose ps 명령어를 사용하여 실행중인지 확인한다.
+  <div align="center">
+  <img width=600 src="https://github.com/user-attachments/assets/b82744f3-6f22-4b96-b9dd-ad3391c18b67">
+  </div>
